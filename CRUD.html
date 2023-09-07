@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1 style="padding: 10px 0px 0px 20px ;">KeyKeep</h1>
+        <p style="padding: 0px 0px 10px 20px;">- Your Personal Password Manager</p>
+    </header>
+    <main>
+    <section class="login-section">
+        <form action="" class="form-details" >
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <label for="nickname">Nick Name</label>
+            <input type="text" id="nickname" name="nickname">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
+    <div class="col-12 col-md-12 mt-5">
+        <table class="table table-striped table-light">
+            <thead>
+                <tr>
+                    <th>Nick Name</th>
+                    <th>User Name</th>
+                    <th>Password</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="user-list">
+                <tr>
+                    <td>Dear</td>
+                    <td>Programmer</td>
+                    <td>25</td>
+                    <td>
+                        <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                        <a href="#" class="btn btn-danger btn-sm Delete">Delete</a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    </main>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
+
